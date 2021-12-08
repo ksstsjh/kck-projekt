@@ -72,6 +72,10 @@ liczba_liter = len(litery)
 wyswietlana_litera = 0
 #  mainloop
 while True:
+    with open("moje_dane.txt", "a") as myfile:
+
+        myfile.write("start\n")
+        
     czas=pygame.time.get_ticks()/1000
     print(czas)
     for event in pygame.event.get():
