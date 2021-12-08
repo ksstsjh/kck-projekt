@@ -82,6 +82,6 @@ while True:
         wyswietlana_litera = (wyswietlana_litera + 1) % liczba_liter
         time.sleep(1)
     # wyswietlanie
-    screen.fill((0,0,0)) # black
-    screen.blit(litery[wyswietlana_litera], (width/2, height/2))
+    screen.fill((255,255,255)) 
+    screen.blit(litery[wyswietlana_litera], (width/2 - Litera_A.get_width()/2, 100))
     pygame.display.flip()
